@@ -1,0 +1,27 @@
+{
+  "id": "dnd5e-token-hands",
+  "title": "Руки на токене: D&D 5e",
+  "description": "Показывает на токенах персонажей и NPC D&D 5e, что у них в руках: оружие, щиты и расходники. Работает поверх базового модуля «Руки на токене» (token-hands): этот модуль только определяет, какие предметы актёр держит в руках, а квадратики, иконки и клик по ним рисует база.",
+  "version": "1.3.1",
+  "authors": [
+    { "name": "Чешир Шредингера", "url": "https://t.me/+BKPrpQRMP7cxMWFi" }
+  ],
+  "url": "https://t.me/+BKPrpQRMP7cxMWFi",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "relationships": {
+    "requires": [
+      { "id": "token-hands", "type": "module", "active": true, "compatibility": { "minimum": "1.3.0" } }
+    ],
+    "systems": [
+      { "id": "dnd5e", "type": "system" }
+    ]
+  },
+  "esmodules": ["dnd5e-token-hands.mjs"],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "ru", "name": "Русский", "path": "lang/ru.json" }
+  ]
+}
