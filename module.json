@@ -1,28 +1,46 @@
 {
-  "id": "dnd5e-token-hands",
-  "title": "Руки на токене: D&D 5e",
-  "description": "Показывает на токенах персонажей и NPC D&D 5e, что у них в руках: оружие, щиты и расходники. Работает поверх базового модуля «Руки на токене» (token-hands): этот модуль только определяет, какие предметы актёр держит в руках, а квадратики, иконки и клик по ним рисует база.",
-  "version": "1.3.1",
+  "id": "deads-man-loot-dnd5e",
+  "title": "Dead's Man Loot — D&D 5e",
+  "description": "Адаптер D&D 5e для базового модуля Dead's Man Loot: системные значения (мёртв ли актёр, какие предметы лутируются, редкость, монеты) плюс слой прав доступа через ГМа и кэш добычи для игроков.",
+  "version": "2.0.0",
   "authors": [
-    { "name": "Чешир Шредингера", "url": "https://t.me/+BKPrpQRMP7cxMWFi" }
+    {
+      "name": "Your Name",
+      "flags": {}
+    }
   ],
-  "url": "https://t.me/+BKPrpQRMP7cxMWFi",
-  "license": "MIT",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
   },
+  "esmodules": ["deads-man-loot-dnd5e.mjs"],
   "relationships": {
     "requires": [
-      { "id": "token-hands", "type": "module", "active": true, "compatibility": { "minimum": "1.3.0" } }
+      {
+        "id": "deads-man-loot",
+        "type": "module",
+        "active": true,
+        "compatibility": {
+          "minimum": "1.0.0"
+        }
+      }
     ],
     "systems": [
-      { "id": "dnd5e", "type": "system" }
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+        "compatibility": {
+          "minimum": "4.0.0"
+        }
+      }
     ]
   },
-  "esmodules": ["dnd5e-token-hands.mjs"],
-  "languages": [
-    { "lang": "en", "name": "English", "path": "lang/en.json" },
-    { "lang": "ru", "name": "Русский", "path": "lang/ru.json" }
-  ]
+  "socket": true,
+  "readme": "README.md",
+  "license": "MIT",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "flags": {}
 }
