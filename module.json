@@ -7,6 +7,7 @@
     { "name": "Чешир Шредингера", "url": "https://t.me/+BKPrpQRMP7cxMWFi" }
   ],
   "url": "https://t.me/+BKPrpQRMP7cxMWFi",
+  "license": "MIT",
   "compatibility": {
     "minimum": "13",
     "verified": "14"
